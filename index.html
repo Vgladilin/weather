@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+    <div class="input">
+        <label for="inp"></label>
+        <input class="input" id="inp" name="inp" placeholder="Search for a city...">
+        <button class="btn"></button>
+    </div>
+
+    <div class="main_page ">
+        <button onclick="getCoords()" type="text" class="geo_btn"></button>
+        <h1 id="city">America/Los_Angeles</h1>
+        <p id="currentTemp" style="font-size: 45px">6°</p>
+        <img id="currentIcon" src="https://openweathermap.org/img/wn/03d.png" alt="">
+        <p id="currentState" style="font-size: 33px; margin-bottom: 10px">Clouds</p>
+        <p id="currentDate" style="margin-bottom: 10px">Friday</p>
+        <div class="info">
+            <div class="info_row" style="margin-bottom: 5px">
+                <p>Wind <span id="windSpeed">1.54</span> m/s</p>
+                <p>Pressure <span id="pressure">1017</span>hPa</p>
+            </div>
+            <div class="info_row">
+                <p>Humidity <span id="humidity">77</span>%</p>
+                <p>Cloudness <span id="cloudness">40</span> %</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="page_row">
+        <div class="page">
+            <h1 id="day1">Sunday</h1>
+            <img id="pic1" src="https://openweathermap.org/img/wn/10d.png" alt="">
+            <p id="temp1" class="num">8°</p>
+            <p id="state1" class="text">Rain</p>
+        </div>
+        <div class="page">
+            <h1 id="day2">Monday</h1>
+            <img id="pic2" src="https://openweathermap.org/img/wn/10d.png" alt="">
+            <p id="temp2" class="num">8°</p>
+            <p id="state2" class="text">Rain</p>
+        </div>
+        <div class="page">
+            <h1 id="day3">Tuesday</h1>
+            <img id="pic3" src="https://openweathermap.org/img/wn/13d.png" alt="">
+            <p id="temp3" class="num">7°</p>
+            <p id="state3" class="text">Snow</p>
+        </div>
+        <div class="page">
+            <h1 id="day4">Wednesday</h1>
+            <img id="pic4" src="https://openweathermap.org/img/wn/10d.png" alt="">
+            <p id="temp4" class="num">5°</p>
+            <p id="state4" class="text">Rain</p>
+        </div>
+    </div>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/script.js"></script>
+</div>
+</body>
+</html>
